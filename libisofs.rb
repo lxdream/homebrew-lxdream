@@ -5,7 +5,7 @@ class Libisofs < Formula
    sha256 "da5f9de3085dd7e34f3bfa73bef4f6380253b839c7aa9aa8ae66f1e1a61a3400"
    
    def install
-     system "./configure"
+     system "./configure", "--prefix=#{prefix}"
      system "make", "install"
    end
 end
